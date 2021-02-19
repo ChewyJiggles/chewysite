@@ -1,0 +1,352 @@
+/*
+CSS document written by @Chewy Jiggles
+main.css
+*/
+
+
+/*
+Main body configuration and styling, must rewrite. Current is aids. unscalable, cancer.
+*/
+
+body {
+
+  background-color: #b0c4de;
+  font-family: "Lucida Console", monaco, monospace;
+}
+
+
+/*
+Paragraph styling
+*/
+
+p.bodytxt {
+
+  margin: 0px 0px 0px 30px;
+  text-indent: 30;
+  font-size: 25px;
+  
+}
+
+
+
+p.bodytitle {
+  
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  
+  text-indent: 40;
+  
+  font-size: 30px;
+  letter-spacing: 3px;
+  
+  color: #6A3500;
+  font-weight: bold;
+  
+}
+
+
+
+p.mainbodytitle {
+
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+  font-size: 50px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  
+  color: #6A3500;
+  text-shadow: 1px 1px 1px #552B00;
+  
+}
+
+
+
+/*
+Title text
+*/
+
+.titletxt {
+
+  border: 4px solid #ffdead;
+
+  display: inline;
+  postion: relative;
+  float: left;
+
+  width: 40%;
+  height: 130px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+
+}
+
+
+
+
+
+
+/*
+Wrapper for title.
+*/
+
+.twrapper {
+
+  border: 4px solid tan;
+  background-color: #6A3500;
+    
+  display: inline;
+  postion: relative;
+  float: left;
+
+  width: 95%;
+  height: 200px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+
+}
+
+
+
+/*
+Logo
+*/
+
+.logo {
+
+  border: 4px solid #6A3500;
+  background-image: url("img/chewy.png");
+  background-size: 120px 120px;
+  background-repeat: no-repeat;
+
+  display: inline;
+  postion: relative;
+  float: left;
+
+  width: 121px;
+  height: 121px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+
+}
+
+
+
+
+/*
+Title div
+*/
+
+.title {
+
+  border: 4px solid tan;
+  background-color: #ffdead;
+  
+  white-space: nowrap;
+    
+  display: inline;
+  postion: relative;
+  float: left;
+
+  width: 95%;
+  height: 150px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+
+}
+
+
+
+/*
+Wrapper for body.
+*/
+
+.mwrapper {
+
+  border: 4px solid tan;
+  background-color: #6A3500;
+    
+  display: inline;
+  postion: relative;
+  float: left;
+
+  width: 95%;
+  height: 1160px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+
+}
+
+
+
+/*
+Styling for navigation sidebar.
+*/
+
+.navbar {
+
+  border: 4px solid tan;
+  background-color: #ffdead;
+    
+  display: inline;
+  postion: relative;
+  float: left;
+
+  width: 22%;
+  height: 400px;
+
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 15px;
+
+}
+
+
+
+/*
+Styling for main content box.
+*/
+
+.main { 
+
+  border: 4px solid tan;
+  background-color: #ffdead;
+
+  display: inline;
+  postion: relative;
+  float: left;
+
+  width: 70%;
+  height: 1115px;
+
+  margin-left: 20px;
+  margin-right: 15px;
+  margin-top: 15px;
+
+}
+
+
+
+/*
+Styling for sidebar.
+*/
+
+.sidebar { 
+
+  border: 4px solid tan;
+  background-color: #ffdead;
+    
+  display: inline;
+  postion: absolute;
+  float: left;
+
+  width: 22%;
+  height: 450px;
+
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 15px;
+
+}
+
+
+
+/*
+Wrapper for footer
+*/
+
+.footwrap {
+
+  border: 4px solid tan;
+  background-color: #6A3500;
+
+  display: inline;
+  postion: relative;
+  float: left;
+
+  width: 95%;
+  height: 80px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+
+}
+
+
+
+/*
+Footer main
+*/
+
+.footer {
+
+  border: 4px solid tan;
+  background-color: #ffdead;
+
+  display: inline;
+  postion: relative;
+  float: left;
+
+  width: 97%;
+  height: 50px;
+
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+
+
+.name {
+
+  font-size: 70px;
+  letter-spacing: 3px;
+  color: #6A3500;
+  text-shadow: 1px 1px 1px #552B00;
+  font-weight: bold;
+
+}
+
+
+
+/*
+Link styling
+*/
+
+/* unvisited link */
+a:link {
+    color: #61380B;
+}
+
+/* visited link */
+a:visited {
+    color: #61380B;
+}
+
+/* mouse over link */
+a:hover {
+    color: #5F4C0B;
+}
+
+/* selected link */
+a:active {
+    color: #886A08;
+}
