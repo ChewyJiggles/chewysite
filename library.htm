@@ -1,0 +1,377 @@
+<!--
+HTML document written by @Chewy Jiggles
+chewyjiggles@ymail.com
+
+library.htm
+-->
+
+
+<head>
+
+<title>Library</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+
+
+<style>
+/* menu */
+.tab {
+  overflow: hidden;
+  border: 4px solid #6A3500;
+  width: 50%;
+  background-color: fce7c7;
+}
+
+/* buttons */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* button hover bg */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* define class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+
+</head>
+
+<body>
+
+<a href="https://www.freecounterstat.com" title="free hit counter"><img src="https://counter4.whocame.ovh/private/freecounterstat.php?c=psewsa4q9dmny51f7ydqcl2f4ehlxrpf" border="0" title="free hit counter" alt="free hit counter"></a>
+
+<!--
+title div wrapper, title, and logo.
+-->
+
+<div class="twrapper">
+
+<div class="title"> 
+
+<div class="logo">
+
+
+</div>
+
+
+
+<div class="titletxt">
+
+<center>
+<br>
+<div class="name">
+Chewy Jiggles
+</div>
+<font size="6">
+<font color="#6A3500">
+
+</font>
+</font>
+</center>
+
+</div>
+</div>
+</div>
+
+
+
+<!--
+main div wrapper
+-->
+
+<div class="mwrapper">
+
+<!--
+Main content box
+-->
+
+<div class="main">
+
+<center> 
+<br>
+<p class="mainbodytitle">
+
+
+
+<p class="bodytitle">
+Chewy's Library
+</p>
+<br>
+
+<p class="bodytxt">
+big word make big thinky
+</p>
+<br><br>
+
+<p class="bodytitle">
+
+</p>
+<br>
+
+
+
+
+    <!-- Tab links (this courtesy of w3schools) -->
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'pdf')">PDFs</button>
+      <button class="tablinks" onclick="openCity(event, 'myshelf')">My Shelf</button>
+      <button class="tablinks" onclick="openCity(event, 'media')">Other</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="pdf" class="tabcontent">
+      <h3>PDFs</h3>
+      <p>
+        <a href="lib/lightninglink.pdf">Lightning Link (PDF)</a><br><br>
+        <a href="lib/gallifreyanguide.pdf">Circular High Gallifreyan (PDF)</a><br><br>
+        <a href="lib/martiansteelmaking.pdf">Steelmaking on Mars (PDF)</a><br><br>
+        <a href="lib/martianiron.pdf">Martian Alloys (PDF)</a><br><br>
+        <a href="lib/mgalloy.pdf">Magnesium Alloys (PDF)</a><br><br>
+        <a href="lib/lol.pdf">tbd</a><br><br>
+      </p>
+    </div>
+
+    <div id="myshelf" class="tabcontent">
+      <h3>My Shelf</h3>
+      <p>(recommended have a *)</p>
+    </div>
+
+    <div id="media" class="tabcontent">
+      <h3>Music/Movies/Games</h3>
+     <p>some good shit yessir</p>
+    </div>
+<script>
+    function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
+
+
+
+<!-- GOODREADS CURRENTLY READING -->
+
+<br><br><br><br>
+      <!-- Show static HTML/CSS as a placeholder in case js is not enabled - javascript include will override this if things work -->
+      <style type="text/css" media="screen">
+  .gr_custom_container_1614196302 {
+    /* customize your Goodreads widget container here*/
+    border: 6px #fce7c7;
+    border-radius:10px;
+    padding: 10px 5px 10px 5px;
+    background-color: #FFFFFF;
+    width: 40%;
+    color: #000000;
+    
+  }
+  .gr_custom_header_1614196302 {
+    /* customize your Goodreads header here*/
+    border-bottom: 1px solid gray;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 150%
+  }
+  .gr_custom_each_container_1614196302 {
+    /* customize each individual book container here */
+    width: 100%;
+    clear: both;
+    margin-bottom: 10px;
+    overflow: auto;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #aaa;
+  }
+  .gr_custom_book_container_1614196302 {
+    /* customize your book covers here */
+    overflow: hidden;
+    height: 160px;
+      float: left;
+      margin-right: 4px;
+      width: 98px;
+  }
+  .gr_custom_author_1614196302 {
+    /* customize your author names here */
+    font-size: 10px;
+  }
+  .gr_custom_tags_1614196302 {
+    /* customize your tags here */
+    font-size: 10px;
+    color: gray;
+  }
+  .gr_custom_rating_1614196302 {
+    /* customize your rating stars here */
+    float: right;
+  }
+</style>
+
+      <div id="gr_custom_widget_1614196302">
+          <div class="gr_custom_container_1614196302">
+    <h2 class="gr_custom_header_1614196302">
+    <a style="text-decoration: none;" rel="nofollow" href="https://www.goodreads.com/review/list/63921718-chewy?shelf=currently-reading&amp;utm_medium=api&amp;utm_source=custom_widget">Currently Reading</a>
+    </h2>
+      <div class="gr_custom_each_container_1614196302">
+          <div class="gr_custom_book_container_1614196302">
+            <a title="Six Degrees: Our Future on a Hotter Planet" rel="nofollow" href="https://www.goodreads.com/review/show/3793951711?utm_medium=api&amp;utm_source=custom_widget"><img alt="Six Degrees: Our Future on a Hotter Planet" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1319501108l/227477._SX98_.jpg" /></a>
+          </div>
+          <div class="gr_custom_title_1614196302">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/3793951711?utm_medium=api&amp;utm_source=custom_widget">Six Degrees: Our Future on a Hotter Planet</a>
+          </div>
+          <div class="gr_custom_author_1614196302">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/133136.Mark_Lynas">Mark Lynas</a>
+          </div>
+      </div>
+      <div class="gr_custom_each_container_1614196302">
+          <div class="gr_custom_book_container_1614196302">
+            <a title="Red Mars (Mars Trilogy, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/3857826949?utm_medium=api&amp;utm_source=custom_widget"><img alt="Red Mars" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1440699787l/77507._SY160_.jpg" /></a>
+          </div>
+          <div class="gr_custom_title_1614196302">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/3857826949?utm_medium=api&amp;utm_source=custom_widget">Red Mars</a>
+          </div>
+          <div class="gr_custom_author_1614196302">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/1858.Kim_Stanley_Robinson">Kim Stanley Robinson</a>
+          </div>
+      </div>
+  <br style="clear: both"/>
+  <center>
+    <a rel="nofollow" href="https://www.goodreads.com/"><img alt="goodreads.com" style="border:0" src="https://s.gr-assets.com/images/widget/widget_logo.gif" /></a>
+  </center>
+  <noscript>
+    Share <a rel="nofollow" href="https://www.goodreads.com/">book reviews</a> and ratings with Chewy, and even join a <a rel="nofollow" href="https://www.goodreads.com/group">book club</a> on Goodreads.
+  </noscript>
+  </div>
+
+      </div>
+      <script src="https://www.goodreads.com/review/custom_widget/63921718.Currently%20Reading?cover_position=left&cover_size=medium&num_books=5&order=a&shelf=currently-reading&show_author=1&show_cover=1&show_rating=0&show_review=0&show_tags=0&show_title=1&sort=date_added&widget_bg_color=FFFFFF&widget_bg_transparent=&widget_border_width=2&widget_id=1614196302&widget_text_color=000000&widget_title_size=large&widget_width=full" type="text/javascript" charset="utf-8"></script>
+
+
+</center>
+
+<br><br>
+
+
+
+<p class="bodytxt">
+
+
+
+</p>
+<br><br>
+
+<p class="bodytitle">
+
+</p>
+<br>
+
+<p class="bodytxt">
+
+
+</p>
+
+<br><br>
+
+</div>
+
+
+
+<!--
+Navbar
+-->
+
+<div class="navbar">
+
+<center> 
+<u>
+<h3>Navigation</h3>
+</u>
+<br>
+
+<a href="index.htm">Index</a>
+<br><br>
+<a href="projects.htm">Projects</a>
+<br><br>
+<a href="library.htm">The Library</a>
+<br><br>
+<a href="http://codeisfreespeech.com/">Code is Free Speech</a>
+<br><br>
+
+ 
+</center>
+
+</div>
+
+
+
+<!--
+second sidebar
+-->
+
+<div class="sidebar">
+
+<center> 
+<u>
+<h3>Socials</h3>
+</u>
+<br>
+<a class="twitter-timeline" data-height="350" data-width="50" href="https://twitter.com/anuminex?ref_src=twsrc%5Etfw">Tweets by anuminex</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</center>
+
+</div>
+</div>
+
+
+
+<!--
+Footer
+-->
+
+<div class="footwrap">
+<div class="footer">
+
+<br>
+<center>
+Code free to use, just F12 it. @Chewy Jiggles
+</center>
+
+
+</div>
+</div>
+
+<br>
+
+
+ 
+</body>
