@@ -13,7 +13,7 @@ library.htm
 
 
 <style>
-/* menu */
+/* tabbed main menu inline css */
 .tab {
   overflow: hidden;
   border: 4px solid #6A3500;
@@ -130,9 +130,11 @@ big word make big thinky
 
     <!-- Tab links (this courtesy of w3schools) -->
     <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'pdf')">PDFs</button>
-      <button class="tablinks" onclick="openCity(event, 'myshelf')">My Shelf</button>
-      <button class="tablinks" onclick="openCity(event, 'media')">Other</button>
+      <button class="tablinks" onclick="openTab(event, 'pdf')">PDFs</button>
+      <button class="tablinks" onclick="openTab(event, 'myshelf')">My Shelf</button>
+      <button class="tablinks" onclick="openTab(event, 'media')">Media</button>
+	  <button class="tablinks" onclick="openTab(event, 'essays')">Essays and Papers</button>
+	  <button class="tablinks" onclick="openTab(event, 'other')">Other</button>
     </div>
 
     <!-- Tab content -->
@@ -144,21 +146,66 @@ big word make big thinky
         <a href="lib/martiansteelmaking.pdf">Steelmaking on Mars (PDF)</a><br><br>
         <a href="lib/martianiron.pdf">Martian Alloys (PDF)</a><br><br>
         <a href="lib/mgalloy.pdf">Magnesium Alloys (PDF)</a><br><br>
-        <a href="lib/lol.pdf">tbd</a><br><br>
+        <a href="lib/warpmechanics.pdf">Warp Field Mechanics 101 (PDF)</a><br><br>
+		<a href="lib/emdrive.pdf">Warp Field Interferometer, 2016 (PDF)</a><br><br>
+		<a href="lib/coptactics.pdf">Defeating Police Tactics in an Urban Protest (PDF)</a><br><br>
+		<a href="lib/lol.pdf">tbd</a><br><br>
       </p>
     </div>
 
-    <div id="myshelf" class="tabcontent">
+    <div id="myshelf" style="overflow: hidden" class="tabcontent">
       <h3>My Shelf</h3>
-      <p>(recommended have a *)</p>
-    </div>
+      <p>(faves are <b>bolded</b>)</p>
+	  
+			<div style="float: left; width: 50%;">
+	<ul>
+		<li>Game of Thrones 1-5 - G.R.R Martin</li>
+		<li><b>Red Mars - Kim Stanley Robinson</li>
+		<li>Green Mars - Kim Stanley Robinson</li>
+		<li>Blue Mars - Kim Stanley Robinson</li>
+		<li>Canticle for Leibowitz - Walter Miller</b></li>
+		<li>Saturn Run - John Sandford</li>
+		<li>Divergent 1-3 - Veronica Roth</li>
+		<li>Hunger Games 1-3 - Suzanne Collins</li>
+		<li>The Last Codfish - J.D. McNeil</li>
+		<li>Path of The Hero - E.S. Brenwalt</li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+
+<div style="float: right; width: 50%;">
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+
+   </div>
 
     <div id="media" class="tabcontent">
       <h3>Music/Movies/Games</h3>
      <p>some good shit yessir</p>
     </div>
+	
+		 <div id="essays" class="tabcontent">
+      <h3>Essays</h3>
+     <p>nerd shit</p>
+    </div>
+	
+	 <div id="other" class="tabcontent">
+      <h3>ppphhbt</h3>
+     <p>somasde goodasdas shit yasdasdasdessir</p>
+    </div>
+
 <script>
-    function openCity(evt, cityName) {
+    function openTab(evt, tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -175,107 +222,12 @@ big word make big thinky
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
+ 
 }
 
 </script>
-
-
-
-<!-- GOODREADS CURRENTLY READING -->
-
-<br><br><br><br>
-      <!-- Show static HTML/CSS as a placeholder in case js is not enabled - javascript include will override this if things work -->
-      <style type="text/css" media="screen">
-  .gr_custom_container_1614196302 {
-    /* customize your Goodreads widget container here*/
-    border: 6px #fce7c7;
-    border-radius:10px;
-    padding: 10px 5px 10px 5px;
-    background-color: #FFFFFF;
-    width: 40%;
-    color: #000000;
-    
-  }
-  .gr_custom_header_1614196302 {
-    /* customize your Goodreads header here*/
-    border-bottom: 1px solid gray;
-    width: 100%;
-    margin-bottom: 5px;
-    text-align: center;
-    font-size: 150%
-  }
-  .gr_custom_each_container_1614196302 {
-    /* customize each individual book container here */
-    width: 100%;
-    clear: both;
-    margin-bottom: 10px;
-    overflow: auto;
-    padding-bottom: 4px;
-    border-bottom: 1px solid #aaa;
-  }
-  .gr_custom_book_container_1614196302 {
-    /* customize your book covers here */
-    overflow: hidden;
-    height: 160px;
-      float: left;
-      margin-right: 4px;
-      width: 98px;
-  }
-  .gr_custom_author_1614196302 {
-    /* customize your author names here */
-    font-size: 10px;
-  }
-  .gr_custom_tags_1614196302 {
-    /* customize your tags here */
-    font-size: 10px;
-    color: gray;
-  }
-  .gr_custom_rating_1614196302 {
-    /* customize your rating stars here */
-    float: right;
-  }
-</style>
-
-      <div id="gr_custom_widget_1614196302">
-          <div class="gr_custom_container_1614196302">
-    <h2 class="gr_custom_header_1614196302">
-    <a style="text-decoration: none;" rel="nofollow" href="https://www.goodreads.com/review/list/63921718-chewy?shelf=currently-reading&amp;utm_medium=api&amp;utm_source=custom_widget">Currently Reading</a>
-    </h2>
-      <div class="gr_custom_each_container_1614196302">
-          <div class="gr_custom_book_container_1614196302">
-            <a title="Six Degrees: Our Future on a Hotter Planet" rel="nofollow" href="https://www.goodreads.com/review/show/3793951711?utm_medium=api&amp;utm_source=custom_widget"><img alt="Six Degrees: Our Future on a Hotter Planet" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1319501108l/227477._SX98_.jpg" /></a>
-          </div>
-          <div class="gr_custom_title_1614196302">
-            <a rel="nofollow" href="https://www.goodreads.com/review/show/3793951711?utm_medium=api&amp;utm_source=custom_widget">Six Degrees: Our Future on a Hotter Planet</a>
-          </div>
-          <div class="gr_custom_author_1614196302">
-            by <a rel="nofollow" href="https://www.goodreads.com/author/show/133136.Mark_Lynas">Mark Lynas</a>
-          </div>
-      </div>
-      <div class="gr_custom_each_container_1614196302">
-          <div class="gr_custom_book_container_1614196302">
-            <a title="Red Mars (Mars Trilogy, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/3857826949?utm_medium=api&amp;utm_source=custom_widget"><img alt="Red Mars" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1440699787l/77507._SY160_.jpg" /></a>
-          </div>
-          <div class="gr_custom_title_1614196302">
-            <a rel="nofollow" href="https://www.goodreads.com/review/show/3857826949?utm_medium=api&amp;utm_source=custom_widget">Red Mars</a>
-          </div>
-          <div class="gr_custom_author_1614196302">
-            by <a rel="nofollow" href="https://www.goodreads.com/author/show/1858.Kim_Stanley_Robinson">Kim Stanley Robinson</a>
-          </div>
-      </div>
-  <br style="clear: both"/>
-  <center>
-    <a rel="nofollow" href="https://www.goodreads.com/"><img alt="goodreads.com" style="border:0" src="https://s.gr-assets.com/images/widget/widget_logo.gif" /></a>
-  </center>
-  <noscript>
-    Share <a rel="nofollow" href="https://www.goodreads.com/">book reviews</a> and ratings with Chewy, and even join a <a rel="nofollow" href="https://www.goodreads.com/group">book club</a> on Goodreads.
-  </noscript>
-  </div>
-
-      </div>
-      <script src="https://www.goodreads.com/review/custom_widget/63921718.Currently%20Reading?cover_position=left&cover_size=medium&num_books=5&order=a&shelf=currently-reading&show_author=1&show_cover=1&show_rating=0&show_review=0&show_tags=0&show_title=1&sort=date_added&widget_bg_color=FFFFFF&widget_bg_transparent=&widget_border_width=2&widget_id=1614196302&widget_text_color=000000&widget_title_size=large&widget_width=full" type="text/javascript" charset="utf-8"></script>
 
 
 </center>
@@ -371,6 +323,7 @@ Code free to use, just F12 it. @Chewy Jiggles
 </div>
 
 <br>
+
 
  
 </body>
